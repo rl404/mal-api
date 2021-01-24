@@ -2,8 +2,8 @@
 GO_CMD   := go
 GO_FMT   := $(GO_CMD) fmt
 GO_CLEAN := $(GO_CMD) clean
-GO_BUILD := $(GO_CMD) build -mod vendor
-GO_RUN   := $(GO_CMD) run -mod vendor
+GO_BUILD := $(GO_CMD) build
+GO_RUN   := $(GO_CMD) run
 
 # Base swagger commands.
 SWAG     := swag
