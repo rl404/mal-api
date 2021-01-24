@@ -2,8 +2,8 @@
 GO_CMD   := go
 GO_FMT   := $(GO_CMD) fmt
 GO_CLEAN := $(GO_CMD) clean
-GO_BUILD := $(GO_CMD) build
-GO_RUN   := $(GO_CMD) run
+GO_BUILD := $(GO_CMD) build -mod vendor
+GO_RUN   := $(GO_CMD) run -mod vendor
 
 # Base swagger commands.
 SWAG     := swag
@@ -55,7 +55,7 @@ DOCKER_LOGS  := $(DOCKER_CMD) logs --follow
 
 # Docker-compose base command and docker-compose.yml path.
 COMPOSE_CMD  := docker-compose
-COMPOSE_PATH := ./deployment/docker-compose.yml
+COMPOSE_PATH := docker-compose.yml
 
 # Container names.
 CONTAINER_MAL := mal_api
