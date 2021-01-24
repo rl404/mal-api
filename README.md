@@ -83,3 +83,15 @@ Level | Trace | Debug | Info | Warn | Error | Fatal
 `2` | :x: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark:
 `3` | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
 `4` | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
+
+## Disclamer
+
+_mal-api_ is meant for educational purpose and personal usage only. Although there is no limit in using the API, do remember that every scraper method is accessing MyAnimeList page so use it responsibly according to MyAnimeList's [Terms Of Service](https://myanimelist.net/about/terms_of_use).
+
+All data (including anime, manga, people, etc) belong to their respective copyrights owners. mal-api does not have any affiliation with content providers.
+
+## License
+
+MIT License
+
+Copyright (c) 2021 Axel
