@@ -1,0 +1,149 @@
+# github.com/KyleBanks/depth v1.2.1
+github.com/KyleBanks/depth
+# github.com/PuerkitoBio/goquery v1.6.1
+## explicit
+github.com/PuerkitoBio/goquery
+# github.com/PuerkitoBio/purell v1.1.1
+github.com/PuerkitoBio/purell
+# github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+github.com/PuerkitoBio/urlesc
+# github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
+## explicit
+github.com/alecthomas/template
+github.com/alecthomas/template/parse
+# github.com/allegro/bigcache v1.2.1
+github.com/allegro/bigcache
+github.com/allegro/bigcache/queue
+# github.com/andybalholm/cascadia v1.2.0
+## explicit
+github.com/andybalholm/cascadia
+# github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b
+github.com/bradfitz/gomemcache/memcache
+# github.com/cespare/xxhash/v2 v2.1.1
+github.com/cespare/xxhash/v2
+# github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+github.com/dgryski/go-rendezvous
+# github.com/elastic/go-elasticsearch/v7 v7.10.0
+github.com/elastic/go-elasticsearch/v7
+github.com/elastic/go-elasticsearch/v7/esapi
+github.com/elastic/go-elasticsearch/v7/estransport
+github.com/elastic/go-elasticsearch/v7/internal/version
+# github.com/go-chi/chi v4.1.1+incompatible
+## explicit
+github.com/go-chi/chi
+github.com/go-chi/chi/middleware
+# github.com/go-openapi/jsonpointer v0.19.5
+github.com/go-openapi/jsonpointer
+# github.com/go-openapi/jsonreference v0.19.5
+github.com/go-openapi/jsonreference
+# github.com/go-openapi/spec v0.20.0
+github.com/go-openapi/spec
+# github.com/go-openapi/swag v0.19.12
+github.com/go-openapi/swag
+# github.com/go-redis/redis/v8 v8.4.8
+github.com/go-redis/redis/v8
+github.com/go-redis/redis/v8/internal
+github.com/go-redis/redis/v8/internal/hashtag
+github.com/go-redis/redis/v8/internal/pool
+github.com/go-redis/redis/v8/internal/proto
+github.com/go-redis/redis/v8/internal/rand
+github.com/go-redis/redis/v8/internal/util
+# github.com/grokify/html-strip-tags-go v0.0.1
+github.com/grokify/html-strip-tags-go
+# github.com/joho/godotenv v1.3.0
+## explicit
+github.com/joho/godotenv
+# github.com/josharian/intern v1.0.0
+github.com/josharian/intern
+# github.com/kelseyhightower/envconfig v1.4.0
+## explicit
+github.com/kelseyhightower/envconfig
+# github.com/mailru/easyjson v0.7.6
+github.com/mailru/easyjson/buffer
+github.com/mailru/easyjson/jlexer
+github.com/mailru/easyjson/jwriter
+# github.com/rl404/go-malscraper v0.0.0-20210123132432-397abe42f4d9
+## explicit
+github.com/rl404/go-malscraper
+github.com/rl404/go-malscraper/errors
+github.com/rl404/go-malscraper/internal
+github.com/rl404/go-malscraper/internal/cacher
+github.com/rl404/go-malscraper/internal/parser
+github.com/rl404/go-malscraper/internal/parser/anime
+github.com/rl404/go-malscraper/internal/parser/article
+github.com/rl404/go-malscraper/internal/parser/character
+github.com/rl404/go-malscraper/internal/parser/club
+github.com/rl404/go-malscraper/internal/parser/genre
+github.com/rl404/go-malscraper/internal/parser/manga
+github.com/rl404/go-malscraper/internal/parser/news
+github.com/rl404/go-malscraper/internal/parser/people
+github.com/rl404/go-malscraper/internal/parser/producer_magazine
+github.com/rl404/go-malscraper/internal/parser/recommendation
+github.com/rl404/go-malscraper/internal/parser/review
+github.com/rl404/go-malscraper/internal/parser/search
+github.com/rl404/go-malscraper/internal/parser/top
+github.com/rl404/go-malscraper/internal/parser/user
+github.com/rl404/go-malscraper/internal/validator
+github.com/rl404/go-malscraper/model
+github.com/rl404/go-malscraper/pkg/utils
+github.com/rl404/go-malscraper/service
+# github.com/rl404/mal-plugin v0.1.1
+## explicit
+github.com/rl404/mal-plugin/cache/bigcache
+github.com/rl404/mal-plugin/cache/memcache
+github.com/rl404/mal-plugin/cache/nocache
+github.com/rl404/mal-plugin/cache/redis
+github.com/rl404/mal-plugin/log/elasticsearch
+github.com/rl404/mal-plugin/log/mallogger
+# github.com/rs/cors v1.7.0
+## explicit
+github.com/rs/cors
+# github.com/swaggo/files v0.0.0-20190704085106-630677cd5c14
+github.com/swaggo/files
+# github.com/swaggo/http-swagger v1.0.0
+## explicit
+github.com/swaggo/http-swagger
+# github.com/swaggo/swag v1.7.0
+## explicit
+github.com/swaggo/swag
+# github.com/tidwall/gjson v1.6.7
+## explicit
+github.com/tidwall/gjson
+# github.com/tidwall/match v1.0.3
+github.com/tidwall/match
+# github.com/tidwall/pretty v1.0.2
+github.com/tidwall/pretty
+# go.opentelemetry.io/otel v0.15.0
+go.opentelemetry.io/otel
+go.opentelemetry.io/otel/codes
+go.opentelemetry.io/otel/internal
+go.opentelemetry.io/otel/internal/baggage
+go.opentelemetry.io/otel/internal/global
+go.opentelemetry.io/otel/internal/trace/noop
+go.opentelemetry.io/otel/label
+go.opentelemetry.io/otel/metric
+go.opentelemetry.io/otel/metric/number
+go.opentelemetry.io/otel/metric/registry
+go.opentelemetry.io/otel/propagation
+go.opentelemetry.io/otel/trace
+go.opentelemetry.io/otel/unit
+# golang.org/x/net v0.0.0-20210119194325-5f4716e94777
+## explicit
+golang.org/x/net/html
+golang.org/x/net/html/atom
+golang.org/x/net/idna
+golang.org/x/net/webdav
+golang.org/x/net/webdav/internal/xml
+# golang.org/x/text v0.3.4
+golang.org/x/text/secure/bidirule
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+golang.org/x/text/width
+# golang.org/x/tools v0.0.0-20201208062317-e652b2f42cc7
+golang.org/x/tools/go/ast/astutil
+golang.org/x/tools/go/buildutil
+golang.org/x/tools/go/internal/cgo
+golang.org/x/tools/go/loader
+# gopkg.in/yaml.v2 v2.4.0
+gopkg.in/yaml.v2

@@ -1,0 +1,3853 @@
+basePath: /
+definitions:
+  model.AlternativeTitle:
+    properties:
+      english:
+        type: string
+      japanese:
+        type: string
+      synonym:
+        type: string
+    type: object
+  model.Anime:
+    properties:
+      airingDate:
+        $ref: '#/definitions/model.StartEndDate'
+      alternativeTitles:
+        $ref: '#/definitions/model.AlternativeTitle'
+      broadcast:
+        type: string
+      duration:
+        type: string
+      episode:
+        type: integer
+      favorite:
+        type: integer
+      genres:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      id:
+        type: integer
+      image:
+        type: string
+      licensors:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      member:
+        type: integer
+      popularity:
+        type: integer
+      premiered:
+        type: string
+      producers:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      rank:
+        type: integer
+      rating:
+        type: string
+      related:
+        $ref: '#/definitions/model.Related'
+      score:
+        type: number
+      song:
+        $ref: '#/definitions/model.Song'
+      source:
+        type: string
+      status:
+        type: string
+      studios:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      synopsis:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+      video:
+        type: string
+      voter:
+        type: integer
+    type: object
+  model.AnimeItem:
+    properties:
+      episode:
+        type: integer
+      genres:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      id:
+        type: integer
+      image:
+        type: string
+      licensors:
+        items:
+          type: string
+        type: array
+      member:
+        type: integer
+      producers:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      score:
+        type: number
+      source:
+        type: string
+      startDate:
+        $ref: '#/definitions/model.Date'
+      synopsis:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+    type: object
+  model.AnimeSearch:
+    properties:
+      endDate:
+        $ref: '#/definitions/model.Date'
+      episode:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      member:
+        type: integer
+      rated:
+        type: string
+      score:
+        type: number
+      startDate:
+        $ref: '#/definitions/model.Date'
+      summary:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+    type: object
+  model.Article:
+    properties:
+      content:
+        type: string
+      date:
+        type: string
+      id:
+        type: integer
+      is_advertorial:
+        type: boolean
+      is_spoiler:
+        type: boolean
+      related:
+        $ref: '#/definitions/model.ArticleRelated'
+      summary:
+        type: string
+      tags:
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+      username:
+        type: string
+      view:
+        type: integer
+    type: object
+  model.ArticleItem:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      is_advertorial:
+        type: boolean
+      is_spoiler:
+        type: boolean
+      summary:
+        type: string
+      tags:
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+      username:
+        type: string
+      view:
+        type: integer
+    type: object
+  model.ArticleRelated:
+    properties:
+      anime:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      character:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      manga:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      people:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+    type: object
+  model.ArticleTagItem:
+    properties:
+      name:
+        type: string
+      tag:
+        type: string
+    type: object
+  model.Character:
+    properties:
+      about:
+        type: string
+      favorite:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      japaneseName:
+        type: string
+      name:
+        type: string
+      nickname:
+        type: string
+    type: object
+  model.CharacterItem:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      name:
+        type: string
+      role:
+        type: string
+      voiceActors:
+        items:
+          $ref: '#/definitions/model.Role'
+        type: array
+    type: object
+  model.CharacterSearch:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      name:
+        type: string
+      nickname:
+        type: string
+    type: object
+  model.Club:
+    properties:
+      admins:
+        items:
+          $ref: '#/definitions/model.ClubAdmin'
+        type: array
+      category:
+        type: string
+      createdDate:
+        type: string
+      id:
+        type: integer
+      image:
+        type: string
+      information:
+        type: string
+      member:
+        type: integer
+      name:
+        type: string
+      picture:
+        type: integer
+      type:
+        type: string
+    type: object
+  model.ClubAdmin:
+    properties:
+      roles:
+        items:
+          type: string
+        type: array
+      username:
+        type: string
+    type: object
+  model.ClubItem:
+    properties:
+      id:
+        type: integer
+      member:
+        type: integer
+      name:
+        type: string
+    type: object
+  model.ClubMember:
+    properties:
+      image:
+        type: string
+      username:
+        type: string
+    type: object
+  model.ClubRelated:
+    properties:
+      anime:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      character:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      manga:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+    type: object
+  model.ClubSearch:
+    properties:
+      creator:
+        type: string
+      id:
+        type: integer
+      image:
+        type: string
+      member:
+        type: integer
+      name:
+        type: string
+      summary:
+        type: string
+    type: object
+  model.Date:
+    properties:
+      day:
+        type: integer
+      month:
+        type: integer
+      year:
+        type: integer
+    type: object
+  model.Episode:
+    properties:
+      airedDate:
+        type: string
+      episode:
+        type: integer
+      japaneseTitle:
+        type: string
+      link:
+        type: string
+      tag:
+        type: string
+      title:
+        type: string
+    type: object
+  model.Item:
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+    type: object
+  model.ItemCount:
+    properties:
+      count:
+        type: integer
+      id:
+        type: integer
+      name:
+        type: string
+    type: object
+  model.Manga:
+    properties:
+      alternativeTitles:
+        $ref: '#/definitions/model.AlternativeTitle'
+      authors:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      chapter:
+        type: integer
+      favorite:
+        type: integer
+      genres:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      id:
+        type: integer
+      image:
+        type: string
+      member:
+        type: integer
+      popularity:
+        type: integer
+      publishingDate:
+        $ref: '#/definitions/model.StartEndDate'
+      rank:
+        type: integer
+      related:
+        $ref: '#/definitions/model.Related'
+      score:
+        type: number
+      serializations:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      status:
+        type: string
+      synopsis:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+      volume:
+        type: integer
+      voter:
+        type: integer
+    type: object
+  model.MangaItem:
+    properties:
+      authors:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      genres:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      id:
+        type: integer
+      image:
+        type: string
+      member:
+        type: integer
+      score:
+        type: number
+      serializations:
+        items:
+          type: string
+        type: array
+      startDate:
+        $ref: '#/definitions/model.Date'
+      synopsis:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+      volume:
+        type: integer
+    type: object
+  model.MangaSearch:
+    properties:
+      chapter:
+        type: integer
+      endDate:
+        $ref: '#/definitions/model.Date'
+      id:
+        type: integer
+      image:
+        type: string
+      member:
+        type: integer
+      score:
+        type: number
+      startDate:
+        $ref: '#/definitions/model.Date'
+      summary:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+      volume:
+        type: integer
+    type: object
+  model.News:
+    properties:
+      comment:
+        type: integer
+      content:
+        type: string
+      date:
+        type: string
+      forum_id:
+        type: integer
+      id:
+        type: integer
+      related:
+        $ref: '#/definitions/model.NewsRelated'
+      tags:
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+      username:
+        type: string
+    type: object
+  model.NewsItem:
+    properties:
+      comment:
+        type: integer
+      content:
+        type: string
+      date:
+        type: string
+      forum_id:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      title:
+        type: string
+      username:
+        type: string
+    type: object
+  model.NewsRelated:
+    properties:
+      anime:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      manga:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+      people:
+        items:
+          $ref: '#/definitions/model.Item'
+        type: array
+    type: object
+  model.NewsTag:
+    properties:
+      anime:
+        items:
+          $ref: '#/definitions/model.NewsTagItem'
+        type: array
+      event:
+        items:
+          $ref: '#/definitions/model.NewsTagItem'
+        type: array
+      industry:
+        items:
+          $ref: '#/definitions/model.NewsTagItem'
+        type: array
+      manga:
+        items:
+          $ref: '#/definitions/model.NewsTagItem'
+        type: array
+      music:
+        items:
+          $ref: '#/definitions/model.NewsTagItem'
+        type: array
+      people:
+        items:
+          $ref: '#/definitions/model.NewsTagItem'
+        type: array
+    type: object
+  model.NewsTagItem:
+    properties:
+      description:
+        type: string
+      name:
+        type: string
+      tag:
+        type: string
+    type: object
+  model.People:
+    properties:
+      alternativeNames:
+        items:
+          type: string
+        type: array
+      birthday:
+        $ref: '#/definitions/model.Date'
+      familyName:
+        type: string
+      favorite:
+        type: integer
+      givenName:
+        type: string
+      id:
+        type: integer
+      image:
+        type: string
+      more:
+        type: string
+      name:
+        type: string
+      website:
+        type: string
+    type: object
+  model.PeopleCharacter:
+    properties:
+      anime:
+        $ref: '#/definitions/model.Role'
+      character:
+        $ref: '#/definitions/model.Role'
+    type: object
+  model.PeopleSearch:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      name:
+        type: string
+      nickname:
+        type: string
+    type: object
+  model.Recommendation:
+    properties:
+      recommended:
+        $ref: '#/definitions/model.Source'
+      source:
+        $ref: '#/definitions/model.Source'
+      users:
+        items:
+          $ref: '#/definitions/model.RecommendationUser'
+        type: array
+    type: object
+  model.RecommendationUser:
+    properties:
+      content:
+        type: string
+      username:
+        type: string
+    type: object
+  model.Related:
+    properties:
+      adaptation:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      alternativeSetting:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      alternativeVersion:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      character:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      fullStory:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      other:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      parentStory:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      prequel:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      sequel:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      sideStory:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      spinOff:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+      summary:
+        items:
+          $ref: '#/definitions/model.RelatedItem'
+        type: array
+    type: object
+  model.RelatedItem:
+    properties:
+      id:
+        type: integer
+      title:
+        type: string
+      type:
+        type: string
+    type: object
+  model.Review:
+    properties:
+      chapter:
+        description: for manga
+        type: string
+      date:
+        type: string
+      episode:
+        description: for anime
+        type: string
+      helpful:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      review:
+        type: string
+      score:
+        $ref: '#/definitions/model.ReviewScore'
+      source:
+        $ref: '#/definitions/model.Source'
+      username:
+        type: string
+    type: object
+  model.ReviewScore:
+    properties:
+      art:
+        description: for both
+        type: integer
+      character:
+        description: for both
+        type: integer
+      enjoyment:
+        description: for both
+        type: integer
+      overall:
+        description: for both
+        type: integer
+      sound:
+        description: for anime only
+        type: integer
+      story:
+        description: for both
+        type: integer
+    type: object
+  model.Role:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      name:
+        type: string
+      role:
+        type: string
+    type: object
+  model.Song:
+    properties:
+      ending:
+        items:
+          type: string
+        type: array
+      opening:
+        items:
+          type: string
+        type: array
+    type: object
+  model.Source:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+    type: object
+  model.StartEndDate:
+    properties:
+      end:
+        $ref: '#/definitions/model.Date'
+      start:
+        $ref: '#/definitions/model.Date'
+    type: object
+  model.Stats:
+    properties:
+      score:
+        $ref: '#/definitions/model.StatsScore'
+      summary:
+        $ref: '#/definitions/model.StatsSummary'
+    type: object
+  model.StatsScore:
+    properties:
+      "1":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "2":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "3":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "4":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "5":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "6":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "7":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "8":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "9":
+        $ref: '#/definitions/model.StatsScoreItem'
+      "10":
+        $ref: '#/definitions/model.StatsScoreItem'
+    type: object
+  model.StatsScoreItem:
+    properties:
+      percent:
+        type: number
+      vote:
+        type: integer
+    type: object
+  model.StatsSummary:
+    properties:
+      completed:
+        type: integer
+      current:
+        type: integer
+      dropped:
+        type: integer
+      onHold:
+        type: integer
+      planned:
+        type: integer
+      total:
+        type: integer
+    type: object
+  model.TopAnime:
+    properties:
+      endDate:
+        $ref: '#/definitions/model.Date'
+      episode:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      member:
+        type: integer
+      rank:
+        type: integer
+      score:
+        type: number
+      startDate:
+        $ref: '#/definitions/model.Date'
+      title:
+        type: string
+      type:
+        type: string
+    type: object
+  model.TopCharacter:
+    properties:
+      favorite:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      japaneseName:
+        type: string
+      name:
+        type: string
+      rank:
+        type: integer
+    type: object
+  model.TopManga:
+    properties:
+      endDate:
+        $ref: '#/definitions/model.Date'
+      id:
+        type: integer
+      image:
+        type: string
+      member:
+        type: integer
+      rank:
+        type: integer
+      score:
+        type: number
+      startDate:
+        $ref: '#/definitions/model.Date'
+      title:
+        type: string
+      type:
+        type: string
+      volume:
+        type: integer
+    type: object
+  model.TopPeople:
+    properties:
+      birthday:
+        $ref: '#/definitions/model.Date'
+      favorite:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      japaneseName:
+        type: string
+      name:
+        type: string
+      rank:
+        type: integer
+    type: object
+  model.User:
+    properties:
+      about:
+        type: string
+      birthday:
+        $ref: '#/definitions/model.Date'
+      blogPost:
+        type: integer
+      club:
+        type: integer
+      forumPost:
+        type: integer
+      friend:
+        type: integer
+      gender:
+        type: string
+      image:
+        type: string
+      joinedDate:
+        type: string
+      lastOnline:
+        type: string
+      location:
+        type: string
+      recommendation:
+        type: integer
+      review:
+        type: integer
+      sns:
+        items:
+          type: string
+        type: array
+      username:
+        type: string
+    type: object
+  model.UserAnime:
+    properties:
+      airingEnd:
+        $ref: '#/definitions/model.Date'
+      airingStart:
+        $ref: '#/definitions/model.Date'
+      airingStatus:
+        type: integer
+      days:
+        type: integer
+      episode:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      isRewatching:
+        type: boolean
+      priority:
+        type: string
+      progress:
+        type: integer
+      rating:
+        type: string
+      score:
+        type: integer
+      status:
+        type: integer
+      storage:
+        type: string
+      tag:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+      watchEnd:
+        type: string
+      watchStart:
+        type: string
+    type: object
+  model.UserAnimeStats:
+    properties:
+      completed:
+        type: integer
+      current:
+        type: integer
+      days:
+        type: number
+      dropped:
+        type: integer
+      episode:
+        type: integer
+      meanScore:
+        type: number
+      onHold:
+        type: integer
+      planned:
+        type: integer
+      rewatched:
+        type: integer
+      total:
+        type: integer
+    type: object
+  model.UserFavorite:
+    properties:
+      anime:
+        items:
+          $ref: '#/definitions/model.UserFavoriteItem'
+        type: array
+      character:
+        items:
+          $ref: '#/definitions/model.UserFavoriteItem'
+        type: array
+      manga:
+        items:
+          $ref: '#/definitions/model.UserFavoriteItem'
+        type: array
+      people:
+        items:
+          $ref: '#/definitions/model.UserFavoriteItem'
+        type: array
+    type: object
+  model.UserFavoriteItem:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      name:
+        type: string
+    type: object
+  model.UserFriend:
+    properties:
+      friendSince:
+        type: string
+      image:
+        type: string
+      lastOnline:
+        type: string
+      username:
+        type: string
+    type: object
+  model.UserHistory:
+    properties:
+      date:
+        type: string
+      id:
+        type: integer
+      progress:
+        type: integer
+      title:
+        type: string
+      type:
+        type: string
+    type: object
+  model.UserManga:
+    properties:
+      chapter:
+        type: integer
+      chapterProgress:
+        type: integer
+      days:
+        type: integer
+      id:
+        type: integer
+      image:
+        type: string
+      isRereading:
+        type: boolean
+      priority:
+        type: string
+      publishingEnd:
+        $ref: '#/definitions/model.Date'
+      publishingStart:
+        $ref: '#/definitions/model.Date'
+      publishingStatus:
+        type: integer
+      readEnd:
+        type: string
+      readStart:
+        type: string
+      score:
+        type: integer
+      status:
+        type: integer
+      tag:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+      volume:
+        type: integer
+      volumeProgress:
+        type: integer
+    type: object
+  model.UserMangaStats:
+    properties:
+      chapter:
+        type: integer
+      completed:
+        type: integer
+      current:
+        type: integer
+      days:
+        type: number
+      dropped:
+        type: integer
+      meanScore:
+        type: number
+      onHold:
+        type: integer
+      planned:
+        type: integer
+      reread:
+        type: integer
+      total:
+        type: integer
+      volume:
+        type: integer
+    type: object
+  model.UserSearch:
+    properties:
+      image:
+        type: string
+      lastOnline:
+        type: string
+      username:
+        type: string
+    type: object
+  model.UserStats:
+    properties:
+      anime:
+        $ref: '#/definitions/model.UserAnimeStats'
+      manga:
+        $ref: '#/definitions/model.UserMangaStats'
+    type: object
+  model.Video:
+    properties:
+      episodes:
+        items:
+          $ref: '#/definitions/model.VideoEpisode'
+        type: array
+      promotions:
+        items:
+          $ref: '#/definitions/model.VideoPromo'
+        type: array
+    type: object
+  model.VideoEpisode:
+    properties:
+      episode:
+        type: integer
+      link:
+        type: string
+      title:
+        type: string
+    type: object
+  model.VideoPromo:
+    properties:
+      link:
+        type: string
+      title:
+        type: string
+    type: object
+  utils.Response:
+    properties:
+      data:
+        type: object
+      message:
+        type: string
+      meta:
+        type: object
+      status:
+        type: integer
+    type: object
+info:
+  contact:
+    email: axel.rl.404@gmail.com
+    name: Axel
+    url: https://github.com/rl404
+  description: Scraping/parsing MyAnimeList website to a useful and easy-to-use data.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  title: Malscraper API
+paths:
+  /anime/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Anime'
+              type: object
+      summary: Get anime details
+      tags:
+      - anime
+  /anime/{id}/article:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ArticleItem'
+                  type: array
+              type: object
+      summary: Get anime featured article list
+      tags:
+      - anime
+  /anime/{id}/characters:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.CharacterItem'
+                  type: array
+              type: object
+      summary: Get anime character list
+      tags:
+      - anime
+  /anime/{id}/clubs:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ClubItem'
+                  type: array
+              type: object
+      summary: Get anime club list
+      tags:
+      - anime
+  /anime/{id}/episodes:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Episode'
+                  type: array
+              type: object
+      summary: Get anime episode list
+      tags:
+      - anime
+  /anime/{id}/more-info:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Get anime more information
+      tags:
+      - anime
+  /anime/{id}/news:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.NewsItem'
+                  type: array
+              type: object
+      summary: Get anime news list
+      tags:
+      - anime
+  /anime/{id}/pictures:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    type: string
+                  type: array
+              type: object
+      summary: Get anime picture list
+      tags:
+      - anime
+  /anime/{id}/recommendations:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Recommendation'
+                  type: array
+              type: object
+      summary: Get anime recommendation list
+      tags:
+      - anime
+  /anime/{id}/reviews:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Review'
+                  type: array
+              type: object
+      summary: Get anime review list
+      tags:
+      - anime
+  /anime/{id}/staff:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Role'
+                  type: array
+              type: object
+      summary: Get anime staff list
+      tags:
+      - anime
+  /anime/{id}/stats:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Stats'
+              type: object
+      summary: Get anime score stats
+      tags:
+      - anime
+  /anime/{id}/videos:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Video'
+              type: object
+      summary: Get anime video list
+      tags:
+      - anime
+  /article/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Featured article ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Article'
+              type: object
+      summary: Get featured article details
+      tags:
+      - featured article
+  /article/tags:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ArticleTagItem'
+                  type: array
+              type: object
+      summary: Get featured article tag list
+      tags:
+      - featured article
+  /articles:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Article tag
+        in: query
+        name: tag
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ArticleItem'
+                  type: array
+              type: object
+      summary: Get featured article list
+      tags:
+      - featured article
+  /character/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Character ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Character'
+              type: object
+      summary: Get character details
+      tags:
+      - character
+  /character/{id}/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Character ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Role'
+                  type: array
+              type: object
+      summary: Get character animeography list
+      tags:
+      - character
+  /character/{id}/article:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Character ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ArticleItem'
+                  type: array
+              type: object
+      summary: Get character article featured list
+      tags:
+      - character
+  /character/{id}/clubs:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Character ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ClubItem'
+                  type: array
+              type: object
+      summary: Get character club list
+      tags:
+      - character
+  /character/{id}/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Character ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Role'
+                  type: array
+              type: object
+      summary: Get character mangaography list
+      tags:
+      - character
+  /character/{id}/pictures:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Character ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    type: string
+                  type: array
+              type: object
+      summary: Get character picture list
+      tags:
+      - character
+  /club/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Club ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Club'
+              type: object
+      summary: Get club details
+      tags:
+      - club
+  /club/{id}/members:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Club ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ClubMember'
+                  type: array
+              type: object
+      summary: Get club member list
+      tags:
+      - club
+  /club/{id}/pictures:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Club ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    type: string
+                  type: array
+              type: object
+      summary: Get club picture list
+      tags:
+      - club
+  /club/{id}/related:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Club ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.ClubRelated'
+              type: object
+      summary: Get club related anime/manga/character
+      tags:
+      - club
+  /clubs:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ClubSearch'
+                  type: array
+              type: object
+      summary: Get club list
+      tags:
+      - club
+  /genre/{id}/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime genre ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.AnimeItem'
+                  type: array
+              type: object
+      summary: Get anime with specific genre
+      tags:
+      - genre
+  /genre/{id}/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga genre ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.MangaItem'
+                  type: array
+              type: object
+      summary: Get manga with specific genre
+      tags:
+      - genre
+  /genres/anime:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ItemCount'
+                  type: array
+              type: object
+      summary: Get anime genre list
+      tags:
+      - genre
+  /genres/manga:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ItemCount'
+                  type: array
+              type: object
+      summary: Get manga genre list
+      tags:
+      - genre
+  /magazine/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Magazine/serialization ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.MangaItem'
+                  type: array
+              type: object
+      summary: Get manga list from specific magazine/serialization
+      tags:
+      - magazine
+  /magazines:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ItemCount'
+                  type: array
+              type: object
+      summary: Get manga magazine/serialization list
+      tags:
+      - magazine
+  /manga/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Manga'
+              type: object
+      summary: Get manga details
+      tags:
+      - manga
+  /manga/{id}/article:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ArticleItem'
+                  type: array
+              type: object
+      summary: Get manga featured article list
+      tags:
+      - manga
+  /manga/{id}/characters:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Role'
+                  type: array
+              type: object
+      summary: Get manga character list
+      tags:
+      - manga
+  /manga/{id}/clubs:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ClubItem'
+                  type: array
+              type: object
+      summary: Get manga club list
+      tags:
+      - manga
+  /manga/{id}/more-info:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  type: string
+              type: object
+      summary: Get manga more information
+      tags:
+      - manga
+  /manga/{id}/news:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.NewsItem'
+                  type: array
+              type: object
+      summary: Get manga news list
+      tags:
+      - manga
+  /manga/{id}/pictures:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    type: string
+                  type: array
+              type: object
+      summary: Get manga picture list
+      tags:
+      - manga
+  /manga/{id}/recommendations:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Recommendation'
+                  type: array
+              type: object
+      summary: Get manga recommendation list
+      tags:
+      - manga
+  /manga/{id}/reviews:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Review'
+                  type: array
+              type: object
+      summary: Get manga review list
+      tags:
+      - manga
+  /manga/{id}/stats:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Stats'
+              type: object
+      summary: Get manga score stats
+      tags:
+      - manga
+  /news:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: News tag
+        in: query
+        name: tag
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.NewsItem'
+                  type: array
+              type: object
+      summary: Get news list
+      tags:
+      - news
+  /news/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: News ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.News'
+              type: object
+      summary: Get news details
+      tags:
+      - news
+  /news/tags:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.NewsTag'
+              type: object
+      summary: Get news tag list
+      tags:
+      - news
+  /people/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.People'
+              type: object
+      summary: Get people details
+      tags:
+      - people
+  /people/{id}/article:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ArticleItem'
+                  type: array
+              type: object
+      summary: Get people featured article list
+      tags:
+      - people
+  /people/{id}/characters:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.PeopleCharacter'
+                  type: array
+              type: object
+      summary: Get people anime character role list
+      tags:
+      - people
+  /people/{id}/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Role'
+                  type: array
+              type: object
+      summary: Get people published manga list
+      tags:
+      - people
+  /people/{id}/news:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.NewsItem'
+                  type: array
+              type: object
+      summary: Get people news list
+      tags:
+      - people
+  /people/{id}/pictures:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    type: string
+                  type: array
+              type: object
+      summary: Get people picture list
+      tags:
+      - people
+  /people/{id}/staff:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Role'
+                  type: array
+              type: object
+      summary: Get people anime staff role list
+      tags:
+      - people
+  /producer/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Producer/studio/licensor ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.AnimeItem'
+                  type: array
+              type: object
+      summary: Get anime list from specific producer/studio/licensor
+      tags:
+      - producer
+  /producers:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ItemCount'
+                  type: array
+              type: object
+      summary: Get anime producer/studio/licensor list
+      tags:
+      - producer
+  /recommendation/anime/{id1}/{id2}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime ID
+        in: path
+        name: id1
+        required: true
+        type: integer
+      - description: Anime ID
+        in: path
+        name: id2
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Recommendation'
+              type: object
+      summary: Get anime recommendation from specific anime.
+      tags:
+      - recommendation
+  /recommendation/manga/{id1}/{id2}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga ID
+        in: path
+        name: id1
+        required: true
+        type: integer
+      - description: Manga ID
+        in: path
+        name: id2
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Recommendation'
+              type: object
+      summary: Get manga recommendation from specific manga.
+      tags:
+      - recommendation
+  /recommendations/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Recommendation'
+                  type: array
+              type: object
+      summary: Get anime recommendation list.
+      tags:
+      - recommendation
+  /recommendations/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Recommendation'
+                  type: array
+              type: object
+      summary: Get manga recommendation list.
+      tags:
+      - recommendation
+  /review/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Review ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.Review'
+              type: object
+      summary: Get review details
+      tags:
+      - review
+  /reviews/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Review'
+                  type: array
+              type: object
+      summary: Get anime review list
+      tags:
+      - review
+  /reviews/best:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Review'
+                  type: array
+              type: object
+      summary: Get best review list
+      tags:
+      - review
+  /reviews/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Review'
+                  type: array
+              type: object
+      summary: Get manga review list
+      tags:
+      - review
+  /search/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Anime title
+        in: query
+        name: query
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Anime type (1=TV, 2=OVA, 3=Movie, 4=Special, 5=ONA, 6=Music)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        in: query
+        name: type
+        type: integer
+      - description: Score
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        in: query
+        name: score
+        type: integer
+      - description: Anime airing status (1=on-going, 2=finished, 3=upcoming)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        in: query
+        name: status
+        type: integer
+      - description: Producer ID
+        in: query
+        name: producer
+        type: integer
+      - description: Anime rating (1=G, 2=PG, 3=PG13, 4=R17, 5=R, 6=RX)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        in: query
+        name: rating
+        type: integer
+      - description: Anime airing start date (yyyy-mm-dd)
+        in: query
+        name: start
+        type: string
+      - description: Anime airing end date (yyyy-mm-dd)
+        in: query
+        name: end
+        type: string
+      - description: Exlude genre?
+        in: query
+        name: xgenre
+        type: boolean
+      - description: Genre ID
+        in: query
+        items:
+          type: integer
+        name: genre
+        type: array
+      - description: Anime first letter
+        in: query
+        name: letter
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.AnimeSearch'
+                  type: array
+              type: object
+      summary: Search anime
+      tags:
+      - search
+  /search/character:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Character name
+        in: query
+        name: query
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.CharacterSearch'
+                  type: array
+              type: object
+      summary: Search character
+      tags:
+      - search
+  /search/club:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Club name
+        in: query
+        name: query
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Category (1=anime, 2=convention, 3=actor & artist, 4=character, 5=company, 6=game, 7=japan, 8=city, 9=music, 10=manga, 11=school, 12=other)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        in: query
+        name: category
+        type: integer
+      - description: Sort (1=name, 2=comment, 3=post, 5=member)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 5
+        in: query
+        name: sort
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.ClubSearch'
+                  type: array
+              type: object
+      summary: Search club
+      tags:
+      - search
+  /search/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Manga title
+        in: query
+        name: query
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Manga type (1=Manga, 2=Light Novel, 3=One-shot, 4=Doujinshi, 5=Manhwa, 6=Manhua, 8=Novel)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 8
+        in: query
+        name: type
+        type: integer
+      - description: Score
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        in: query
+        name: score
+        type: integer
+      - description: Manga publishing status (1=on-going, 2=finished, 3=upcoming, 4=hiatus, 5=discontinued)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        in: query
+        name: status
+        type: integer
+      - description: Magazine ID
+        in: query
+        name: magazine
+        type: integer
+      - description: Manga publishing start date (yyyy-mm-dd)
+        in: query
+        name: start
+        type: string
+      - description: Manga publishing end date (yyyy-mm-dd)
+        in: query
+        name: end
+        type: string
+      - description: Exlude genre?
+        in: query
+        name: xgenre
+        type: boolean
+      - description: Genre ID
+        in: query
+        items:
+          type: integer
+        name: genre
+        type: array
+      - description: Manga first letter
+        in: query
+        name: letter
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.MangaSearch'
+                  type: array
+              type: object
+      summary: Search manga
+      tags:
+      - search
+  /search/people:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: People name
+        in: query
+        name: query
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.PeopleSearch'
+                  type: array
+              type: object
+      summary: Search people
+      tags:
+      - search
+  /search/user:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: query
+        name: query
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Location
+        in: query
+        name: location
+        type: string
+      - description: Minimum age
+        in: query
+        name: minAge
+        type: integer
+      - description: Maximum age
+        in: query
+        name: maxAge
+        type: integer
+      - description: Gender (1=male, 2=female, 3=non-binary)
+        enum:
+        - "0"
+        - "1"
+        - "2"
+        - "3"
+        in: query
+        name: gender
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.UserSearch'
+                  type: array
+              type: object
+      summary: Search user
+      tags:
+      - search
+  /season:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Season name
+        enum:
+        - winter
+        - spring
+        - summer
+        - fall
+        in: query
+        name: season
+        type: string
+      - description: Year
+        in: query
+        name: year
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.AnimeItem'
+                  type: array
+              type: object
+      summary: Get seasonal anime list (with query)
+      tags:
+      - season
+  /season/{season}/{year}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Season name
+        enum:
+        - winter
+        - spring
+        - summer
+        - fall
+        in: path
+        name: season
+        required: true
+        type: string
+      - description: Year
+        in: path
+        name: year
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.AnimeItem'
+                  type: array
+              type: object
+      summary: Get seasonal anime list (with path)
+      tags:
+      - season
+  /top/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Top type (1=airing, 2=upcoming, 3=tv, 4=movie, 5=ova, 6=ona, 7=special, 8=popularity, 9=favorite
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        in: query
+        name: type
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.TopAnime'
+                  type: array
+              type: object
+      summary: Get top anime list
+      tags:
+      - top
+  /top/character:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.TopCharacter'
+                  type: array
+              type: object
+      summary: Get top character list
+      tags:
+      - top
+  /top/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Top type (1=manga, 2=novel, 3=one-shot, 4=doujin, 5=manhwa, 6=manhua, 7=popularity, 8=favorite
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        in: query
+        name: type
+        type: integer
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.TopManga'
+                  type: array
+              type: object
+      summary: Get top manga list
+      tags:
+      - top
+  /top/people:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.TopPeople'
+                  type: array
+              type: object
+      summary: Get top people list
+      tags:
+      - top
+  /user/{user}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.User'
+              type: object
+      summary: Get user details
+      tags:
+      - user
+  /user/{user}/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Progress status (1=watching, 2=completed, 3=on-hold, 4=dropped, 6=planned, 7=all)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        in: query
+        name: status
+        type: integer
+      - description: Order (1=title, 2=finish date, 3=start date, 4=score, 6=type, 8=rating, 11=priority, 12=progress, 13=storage, 14=airing start, 15=airing end)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 8
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        in: query
+        name: order
+        type: integer
+      - description: Tag
+        in: query
+        name: tag
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.UserAnime'
+                  type: array
+              type: object
+      summary: Get user anime list
+      tags:
+      - user
+  /user/{user}/clubs:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Item'
+                  type: array
+              type: object
+      summary: Get user club list
+      tags:
+      - user
+  /user/{user}/favorites:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.UserFavorite'
+              type: object
+      summary: Get user favorite list
+      tags:
+      - user
+  /user/{user}/friends:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.UserFriend'
+                  type: array
+              type: object
+      summary: Get user friend list
+      tags:
+      - user
+  /user/{user}/history:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.UserHistory'
+                  type: array
+              type: object
+      summary: Get user anime & manga history
+      tags:
+      - user
+  /user/{user}/history/anime:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.UserHistory'
+                  type: array
+              type: object
+      summary: Get user anime history
+      tags:
+      - user
+  /user/{user}/history/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.UserHistory'
+                  type: array
+              type: object
+      summary: Get user manga history
+      tags:
+      - user
+  /user/{user}/manga:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      - description: Progress status (1=watching, 2=completed, 3=on-hold, 4=dropped, 6=planned, 7=all)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        in: query
+        name: status
+        type: integer
+      - description: Order (1=title, 2=finish date, 3=start date, 4=score, 7=priority, 8=chapter, 9=volume, 10=type, 11=publishing start, 12=publishing end)
+        enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        in: query
+        name: order
+        type: integer
+      - description: Tag
+        in: query
+        name: tag
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.UserManga'
+                  type: array
+              type: object
+      summary: Get user manga list
+      tags:
+      - user
+  /user/{user}/recommendations:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Recommendation'
+                  type: array
+              type: object
+      summary: Get user recommendation list
+      tags:
+      - user
+  /user/{user}/reviews:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      - description: Page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.Review'
+                  type: array
+              type: object
+      summary: Get user review list
+      tags:
+      - user
+  /user/{user}/stats:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User name
+        in: path
+        name: user
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/utils.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.UserStats'
+              type: object
+      summary: Get user stats
+      tags:
+      - user
+schemes:
+- http
+- https
+swagger: "2.0"

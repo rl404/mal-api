@@ -1,0 +1,2481 @@
+{
+	"info": {
+		"_postman_id": "58885411-0cb3-4b57-bb84-f9b769fbda2b",
+		"name": "mal-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Anime",
+			"item": [
+				{
+					"name": "Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/article",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"article"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Character",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/characters",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"characters"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/clubs",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"clubs"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Episode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/episodes?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"episodes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "More Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/more-info",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"more-info"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/news",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"news"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Picture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/pictures",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"pictures"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommendation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/recommendations",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"recommendations"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/reviews?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Staff",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/staff",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"staff"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/stats",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"stats"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Video",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/anime/:id/videos?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"anime",
+								":id",
+								"videos"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "Tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/article/tags",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"article",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/article/:id",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"article",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2321"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/articles?tag=live_action&page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"articles"
+							],
+							"query": [
+								{
+									"key": "tag",
+									"value": "live_action"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Character",
+			"item": [
+				{
+					"name": "Character",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/character/:id",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"character",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/character/:id/anime",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"character",
+								":id",
+								"anime"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/character/:id/article",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"character",
+								":id",
+								"article"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/character/:id/clubs",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"character",
+								":id",
+								"clubs"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/character/:id/manga",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"character",
+								":id",
+								"manga"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Picture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/character/:id/pictures",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"character",
+								":id",
+								"pictures"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Club",
+			"item": [
+				{
+					"name": "Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/club/:id",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"club",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/club/:id/members?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"club",
+								":id",
+								"members"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Picture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/club/:id/pictures",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"club",
+								":id",
+								"pictures"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Related",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/club/:id/related",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"club",
+								":id",
+								"related"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clubs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/clubs?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"clubs"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genre",
+			"item": [
+				{
+					"name": "Anime with Genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/genre/:id/anime?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"genre",
+								":id",
+								"anime"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga with Genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/genre/:id/manga?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"genre",
+								":id",
+								"manga"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anime Genres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/genres/anime",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"genres",
+								"anime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga Genres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/genres/manga",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"genres",
+								"manga"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Magazine",
+			"item": [
+				{
+					"name": "Magazine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/magazine/:id?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"magazine",
+								":id"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Magazines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/magazines",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"magazines"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manga",
+			"item": [
+				{
+					"name": "Manga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/article",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"article"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "17517"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Character",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/characters",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"characters"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/clubs",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"clubs"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "More Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/more-info",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"more-info"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/news",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"news"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Picture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/pictures",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"pictures"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommendation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/recommendations",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"recommendations"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/reviews?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/manga/:id/stats",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"manga",
+								":id",
+								"stats"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/news?tag=new_anime&page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"news"
+							],
+							"query": [
+								{
+									"key": "tag",
+									"value": "new_anime"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/news/tags",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"news",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{go-malscraper-url}}/v1/news/:id",
+							"host": [
+								"{{go-malscraper-url}}"
+							],
+							"path": [
+								"v1",
+								"news",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "34036779"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "People",
+			"item": [
+				{
+					"name": "People",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/people/:id",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"people",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/people/:id/article",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"people",
+								":id",
+								"article"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "185"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Character",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/people/:id/characters",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"people",
+								":id",
+								"characters"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/people/:id/manga",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"people",
+								":id",
+								"manga"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1868"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/people/:id/news",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"people",
+								":id",
+								"news"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "212"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Picture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/people/:id/pictures",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"people",
+								":id",
+								"pictures"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Staff",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/people/:id/staff",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"people",
+								":id",
+								"staff"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producer",
+			"item": [
+				{
+					"name": "Producer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/producer/:id?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"producer",
+								":id"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Producers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/producers",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"producers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recommendation",
+			"item": [
+				{
+					"name": "Anime Recommendation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/recommendation/anime/:id1/:id2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"recommendation",
+								"anime",
+								":id1",
+								":id2"
+							],
+							"variable": [
+								{
+									"key": "id1",
+									"value": "1"
+								},
+								{
+									"key": "id2",
+									"value": "205"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga Recommendation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/recommendation/manga/:id1/:id2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"recommendation",
+								"manga",
+								":id1",
+								":id2"
+							],
+							"variable": [
+								{
+									"key": "id1",
+									"value": "1"
+								},
+								{
+									"key": "id2",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anime Recommendations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/recommendations/anime?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"recommendations",
+								"anime"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga Recommendations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/recommendations/manga?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"recommendations",
+								"manga"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/review/:id",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"review",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anime Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/reviews/anime?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"reviews",
+								"anime"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Best Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/reviews/best?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"reviews",
+								"best"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/reviews/manga?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"reviews",
+								"manga"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/search/anime?query=naruto&page=1&type=3&status=2&score=7&producer=1&rating=3&xgenre=true&genre=12&letter=n&start=2007-02-20&end=2020-10-03",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"search",
+								"anime"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "naruto"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "type",
+									"value": "3"
+								},
+								{
+									"key": "status",
+									"value": "2"
+								},
+								{
+									"key": "score",
+									"value": "7"
+								},
+								{
+									"key": "producer",
+									"value": "1"
+								},
+								{
+									"key": "rating",
+									"value": "3"
+								},
+								{
+									"key": "xgenre",
+									"value": "true"
+								},
+								{
+									"key": "genre",
+									"value": "12"
+								},
+								{
+									"key": "letter",
+									"value": "n"
+								},
+								{
+									"key": "start",
+									"value": "2007-02-20"
+								},
+								{
+									"key": "end",
+									"value": "2020-10-03"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Character",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/search/character?query=naruto&page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"search",
+								"character"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "naruto"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/search/club?query=one&category=0&sort=1&page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"search",
+								"club"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "one"
+								},
+								{
+									"key": "category",
+									"value": "0"
+								},
+								{
+									"key": "sort",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/search/manga?query=naruto&page=1&type=1&status=2&score=7&magazine=83&xgenre=true&genre=12&letter=n&start=1990-02-20&end=2020-10-03",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"search",
+								"manga"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "naruto"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "type",
+									"value": "1"
+								},
+								{
+									"key": "status",
+									"value": "2"
+								},
+								{
+									"key": "score",
+									"value": "7"
+								},
+								{
+									"key": "magazine",
+									"value": "83"
+								},
+								{
+									"key": "xgenre",
+									"value": "true"
+								},
+								{
+									"key": "genre",
+									"value": "12"
+								},
+								{
+									"key": "letter",
+									"value": "n"
+								},
+								{
+									"key": "start",
+									"value": "1990-02-20"
+								},
+								{
+									"key": "end",
+									"value": "2020-10-03"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "People",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/search/people?query=kana&page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"search",
+								"people"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "kana"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/search/user?query=nice&page=1&location=California&minAge=20&maxAge=30&gender=male",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"search",
+								"user"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "nice"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "location",
+									"value": "California"
+								},
+								{
+									"key": "minAge",
+									"value": "20"
+								},
+								{
+									"key": "maxAge",
+									"value": "30"
+								},
+								{
+									"key": "gender",
+									"value": "male"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Season",
+			"item": [
+				{
+					"name": "Season (query)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/season?season=winter&year=2019",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"season"
+							],
+							"query": [
+								{
+									"key": "season",
+									"value": "winter"
+								},
+								{
+									"key": "year",
+									"value": "2019"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Season (path)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/season/:season/:year",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"season",
+								":season",
+								":year"
+							],
+							"variable": [
+								{
+									"key": "season",
+									"value": "winter"
+								},
+								{
+									"key": "year",
+									"value": "2019"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Top",
+			"item": [
+				{
+					"name": "Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/top/anime?type=3&page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"top",
+								"anime"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "3"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Character",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/top/character?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"top",
+								"character"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/top/manga?type=3&page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"top",
+								"manga"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "3"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "People",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/top/people?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"top",
+								"people"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/anime?status=7&page=2&order=1&tag",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"anime"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "7"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "order",
+									"value": "1"
+								},
+								{
+									"key": "tag",
+									"value": null
+								}
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/clubs",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"clubs"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "Archaeon"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/favorites",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"favorites"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Friend",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/friends?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"friends"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "mizore"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/history",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"history"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/history/anime",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"history",
+								"anime"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History Manga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/history/manga",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"history",
+								"manga"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/manga?page=2&status=7&order=1&tag",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"manga"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "status",
+									"value": "7"
+								},
+								{
+									"key": "order",
+									"value": "1"
+								},
+								{
+									"key": "tag",
+									"value": null
+								}
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommendation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/recommendations?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"recommendations"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "Archaeon"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/reviews?page=2",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "Archaeon"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mal-api-url}}/user/:user/stats",
+							"host": [
+								"{{mal-api-url}}"
+							],
+							"path": [
+								"user",
+								":user",
+								"stats"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "rl404"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "mal-api-url",
+			"value": "http://localhost:8005"
+		}
+	]
+}

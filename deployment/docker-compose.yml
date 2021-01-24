@@ -1,0 +1,13 @@
+version: "2.4"
+
+services:
+  mal_api:
+    container_name: mal_api
+    image: mal-api:latest
+    build:
+      context: ./..
+      dockerfile: ./build/package/Dockerfile
+    ports:
+      - 8005:8005
+    tty: true
+    env_file: ./../.env
