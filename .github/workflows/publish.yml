@@ -42,6 +42,6 @@ jobs:
         push: true
         tags: |
           rl404/mal-api:latest
-          rl404/mal-api:"${{ env.IMG_TAG }}"
+          rl404/mal-api:${{ env.IMG_TAG }}
           ghcr.io/rl4004/mal-api:latest
-          ghcr.io/rl4004/mal-api:"${{ env.IMG_TAG }}"
+          ghcr.io/rl4004/mal-api:${{ env.IMG_TAG }}
