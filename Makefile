@@ -38,7 +38,7 @@ swagger:
 
 # Build the project executable binary.
 .PHONY: build
-build: clean fmt swagger
+build: clean fmt
 	@cd $(CMD_PATH); \
 	$(GO_BUILD) -o $(BINARY_NAME) -v
 

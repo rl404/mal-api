@@ -53,6 +53,13 @@ func main() {
 		l.Fatal(err.Error())
 	}
 	l.Info("cache initialized")
+	defer func() {
+		if err = c.Close(); err != nil {
+			l.Error(err.Error())
+		} else {
+			l.Info("cache stopped")
+		}
+	}()
 
 	// Init malscraper.
 	mal, err := malscraper.New(malscraper.Config{
@@ -73,9 +80,16 @@ func main() {
 		WriteTimeout:    cfg.Web.WriteTimeout,
 		GracefulTimeout: cfg.Web.GracefulTimeout,
 	})
-	r := server.Router()
+	defer func() {
+		if err = server.Close(); err != nil {
+			l.Error(err.Error())
+		} else {
+			l.Info("web server stopped")
+		}
+	}()
 
 	// Init web router middleware.
+	r := server.Router()
 	r.Use(cors.AllowAll().Handler)
 	r.Use(middleware.RealIP)
 	if cfg.ES.Address != "" {
@@ -115,18 +129,6 @@ func main() {
 			l.Fatal(err.Error())
 		}
 	case <-sigChan:
-	}
-
-	if err = server.Close(); err != nil {
-		l.Error(err.Error())
-	} else {
-		l.Info("web server stopped")
-	}
-
-	if err = c.Close(); err != nil {
-		l.Error(err.Error())
-	} else {
-		l.Info("cache stopped")
 	}
 
 	l.Info("server has been running for %s", time.Since(startTime).Truncate(time.Millisecond))
