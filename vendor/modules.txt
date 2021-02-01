@@ -40,7 +40,6 @@ github.com/go-openapi/spec
 # github.com/go-openapi/swag v0.19.13
 github.com/go-openapi/swag
 # github.com/go-redis/redis/v8 v8.4.11
-## explicit
 github.com/go-redis/redis/v8
 github.com/go-redis/redis/v8/internal
 github.com/go-redis/redis/v8/internal/hashtag
@@ -48,8 +47,6 @@ github.com/go-redis/redis/v8/internal/pool
 github.com/go-redis/redis/v8/internal/proto
 github.com/go-redis/redis/v8/internal/rand
 github.com/go-redis/redis/v8/internal/util
-# github.com/golang/protobuf v1.4.3
-## explicit
 # github.com/grokify/html-strip-tags-go v0.0.1
 github.com/grokify/html-strip-tags-go
 # github.com/joho/godotenv v1.3.0
@@ -64,9 +61,7 @@ github.com/kelseyhightower/envconfig
 github.com/mailru/easyjson/buffer
 github.com/mailru/easyjson/jlexer
 github.com/mailru/easyjson/jwriter
-# github.com/nxadm/tail v1.4.6
-## explicit
-# github.com/rl404/go-malscraper v1.1.1
+# github.com/rl404/go-malscraper v1.1.2
 ## explicit
 github.com/rl404/go-malscraper
 github.com/rl404/go-malscraper/errors
@@ -91,8 +86,9 @@ github.com/rl404/go-malscraper/internal/validator
 github.com/rl404/go-malscraper/model
 github.com/rl404/go-malscraper/pkg/utils
 github.com/rl404/go-malscraper/service
-# github.com/rl404/mal-plugin v0.1.1
+# github.com/rl404/mal-plugin v0.2.0
 ## explicit
+github.com/rl404/mal-plugin/cache
 github.com/rl404/mal-plugin/cache/bigcache
 github.com/rl404/mal-plugin/cache/memcache
 github.com/rl404/mal-plugin/cache/nocache
@@ -140,7 +136,6 @@ golang.org/x/net/idna
 golang.org/x/net/webdav
 golang.org/x/net/webdav/internal/xml
 # golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
-## explicit
 golang.org/x/sys/execabs
 # golang.org/x/text v0.3.5
 golang.org/x/text/secure/bidirule
@@ -154,7 +149,5 @@ golang.org/x/tools/go/ast/astutil
 golang.org/x/tools/go/buildutil
 golang.org/x/tools/go/internal/cgo
 golang.org/x/tools/go/loader
-# google.golang.org/protobuf v1.25.0
-## explicit
 # gopkg.in/yaml.v2 v2.4.0
 gopkg.in/yaml.v2
