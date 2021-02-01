@@ -110,7 +110,7 @@ github.com/swaggo/http-swagger
 # github.com/swaggo/swag v1.7.0
 ## explicit
 github.com/swaggo/swag
-# github.com/tidwall/gjson v1.6.7
+# github.com/tidwall/gjson v1.6.8
 ## explicit
 github.com/tidwall/gjson
 # github.com/tidwall/match v1.0.3
