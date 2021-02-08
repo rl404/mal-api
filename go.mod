@@ -8,7 +8,7 @@ require (
 	github.com/go-openapi/spec v0.20.2 // indirect
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
-	github.com/rl404/go-malscraper v1.2.0
+	github.com/rl404/go-malscraper v1.2.1
 	github.com/rl404/mal-plugin v0.2.0
 	github.com/rs/cors v1.7.0
 	github.com/swaggo/http-swagger v1.0.0
