@@ -62,7 +62,7 @@ github.com/kelseyhightower/envconfig
 github.com/mailru/easyjson/buffer
 github.com/mailru/easyjson/jlexer
 github.com/mailru/easyjson/jwriter
-# github.com/rl404/go-malscraper v1.2.3
+# github.com/rl404/go-malscraper v1.2.4
 ## explicit
 github.com/rl404/go-malscraper
 github.com/rl404/go-malscraper/errors
