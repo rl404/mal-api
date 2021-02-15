@@ -123,8 +123,8 @@ github.com/onsi/gomega v1.10.5/go.mod h1:gza4q3jKQJijlu05nKWRCW/GavJumGt8aNRxWg7
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4/go.mod h1:xMI15A0UPsDsEKsMN9yxemIoYk6Tm2C1GtYGdfGttqA=
-github.com/rl404/go-malscraper v1.2.3 h1:tX9jp1q+hu7zRiKJgIiO2/1qx4iNTMOjreJOqIA1T84=
-github.com/rl404/go-malscraper v1.2.3/go.mod h1:Fm5Cpp+7DFoz2xPqI+HYRsCWGg1xP4Oq0cZHlfEpwlk=
+github.com/rl404/go-malscraper v1.2.4 h1:9/jcw8HJEmMaVUPJddgXfO202Y5m5Kb4NSDKIoBSLMs=
+github.com/rl404/go-malscraper v1.2.4/go.mod h1:Fm5Cpp+7DFoz2xPqI+HYRsCWGg1xP4Oq0cZHlfEpwlk=
 github.com/rl404/mal-plugin v0.2.1 h1:/ZGDkL6aZMDx+bTAA2oCYBDcxxhGuJiPt/3ZyGyE7U8=
 github.com/rl404/mal-plugin v0.2.1/go.mod h1:xbwp7rZNLrFjuYJyH3pUv4Wy7S3pA+XW0NlJxF3t/KY=
 github.com/rs/cors v1.7.0 h1:+88SsELBHx5r+hZ8TCkggzSstaWNbDvThkVK8H6f9ik=
