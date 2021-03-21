@@ -64,7 +64,7 @@ Env | Default | Description
 `MAL_WEB_GRACEFUL_TIMEOUT` | `10` | HTTP server shutdown timeout (in seconds)
 `MAL_CLEAN_IMAGE` | `true` | Cleaning MyAnimelist image URL
 `MAL_CLEAN_VIDEO` | `true` | Cleaning MyAnimelist image URL
-`MAL_CACHE_DIALECT` | `inmmemory` | Cache type (`nocache`, `inmemory`, `redis`, `memcache`)
+`MAL_CACHE_DIALECT` | `inmemory` | Cache type (`nocache`, `inmemory`, `redis`, `memcache`)
 `MAL_CACHE_ADDRESS` |  | Cache address
 `MAL_CACHE_PASSWORD` |  | Cache password
 `MAL_CACHE_TIME` | `86400` | Cache time (in seconds)
