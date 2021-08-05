@@ -13,7 +13,7 @@ require (
 	github.com/rl404/go-malscraper v1.2.12-0.20210401040210-79ce528515c6
 	github.com/rl404/mal-plugin v0.3.14
 	github.com/rs/cors v1.8.0
-	github.com/swaggo/http-swagger v1.0.0
+	github.com/swaggo/http-swagger v1.1.1
 	github.com/swaggo/swag v1.7.0
 	github.com/tidwall/gjson v1.8.1
 	golang.org/x/mod v0.4.1 // indirect
