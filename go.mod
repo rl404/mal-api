@@ -10,11 +10,10 @@ require (
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/rl404/go-malscraper v1.2.12-0.20210401040210-79ce528515c6
-	github.com/rl404/mal-plugin v0.3.16
+	github.com/rl404/mal-plugin v0.3.17
 	github.com/rs/cors v1.8.0
 	github.com/swaggo/http-swagger v1.1.1
 	github.com/swaggo/swag v1.7.1
 	github.com/tidwall/gjson v1.8.1
 	golang.org/x/mod v0.4.1 // indirect
-	golang.org/x/sys v0.0.0-20210331175145-43e1dd70ce54 // indirect
 )
