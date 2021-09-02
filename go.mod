@@ -14,6 +14,6 @@ require (
 	github.com/rs/cors v1.8.0
 	github.com/swaggo/http-swagger v1.1.1
 	github.com/swaggo/swag v1.7.1
-	github.com/tidwall/gjson v1.8.1
+	github.com/tidwall/gjson v1.9.0
 	golang.org/x/mod v0.4.1 // indirect
 )
