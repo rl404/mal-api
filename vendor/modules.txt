@@ -111,16 +111,13 @@ github.com/swaggo/http-swagger
 # github.com/swaggo/swag v1.7.1
 ## explicit
 github.com/swaggo/swag
-# github.com/tidwall/gjson v1.9.0
+# github.com/tidwall/gjson v1.9.1
 ## explicit
 github.com/tidwall/gjson
 # github.com/tidwall/match v1.0.3
 github.com/tidwall/match
 # github.com/tidwall/pretty v1.2.0
-## explicit
 github.com/tidwall/pretty
-# go.opentelemetry.io/otel v0.19.0
-## explicit
 # golang.org/x/net v0.0.0-20210913180222-943fd674d43e
 ## explicit
 golang.org/x/net/html
@@ -145,7 +142,5 @@ golang.org/x/tools/go/buildutil
 golang.org/x/tools/go/internal/cgo
 golang.org/x/tools/go/loader
 golang.org/x/tools/internal/typeparams
-# google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013
-## explicit
 # gopkg.in/yaml.v2 v2.4.0
 gopkg.in/yaml.v2
