@@ -17,8 +17,7 @@ require (
 	github.com/swaggo/files v0.0.0-20210815190702-a29dd2bc99b2 // indirect
 	github.com/swaggo/http-swagger v1.1.1
 	github.com/swaggo/swag v1.7.1
-	github.com/tidwall/gjson v1.9.0
-	github.com/tidwall/pretty v1.2.0 // indirect
+	github.com/tidwall/gjson v1.9.1
 	golang.org/x/net v0.0.0-20210913180222-943fd674d43e // indirect
 	golang.org/x/sys v0.0.0-20210910150752-751e447fb3d0 // indirect
 	golang.org/x/text v0.3.7 // indirect
