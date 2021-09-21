@@ -11,7 +11,7 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/rl404/go-malscraper v1.2.18
+	github.com/rl404/go-malscraper v1.2.20
 	github.com/rl404/mal-plugin v0.3.18
 	github.com/rs/cors v1.8.0
 	github.com/swaggo/files v0.0.0-20210815190702-a29dd2bc99b2 // indirect
